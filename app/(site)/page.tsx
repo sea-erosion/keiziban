@@ -10,16 +10,16 @@ import { newsItems } from '@/content/news'
 
 const strengths = [
   {
-    title: '地域密着30年',
-    body: '大分県を中心に、地域の皆様とともに歩んできました。土地の気候・風土を知り尽くした職人が、長く愛される家を建てます。',
+    title: '分からないところを聞く',
+    body: '課題や勉強で分からないところを人に尋ねる。投稿したら、誰かが解説してくれるかもしれない。',
   },
   {
-    title: '自然素材へのこだわり',
-    body: '国産無垢材・珪藻土・自然塗料を積極的に採用。体に優しく、年を重ねるごとに味わいが増す家づくりを大切にしています。',
+    title: '学習の記録',
+    body: '学習時間や教科などを記録することができる。忘却曲線により、次する課題の提案もしてくれる。',
   },
   {
-    title: '完全自社施工',
-    body: '設計から施工まで一貫して自社で対応。外注を使わないため、品質管理が行き届き、責任ある仕事をお届けできます。',
+    title: '各種暗記システム',
+    body: '各種暗記アプリにより、暗記をすることができる。対応教科：古典、英語',
   },
 ]
 
@@ -59,8 +59,8 @@ export default function TopPage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80"
-            alt="架空工務店の施工事例"
+            src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=1600&q=80"
+            alt="勉強風景"
             fill
             className="object-cover"
             priority
@@ -68,17 +68,17 @@ export default function TopPage() {
           <div className="absolute inset-0 bg-earth-900/50" />
         </div>
         <div className="relative z-10 text-center text-earth-50 px-6">
-          <p className="text-xs tracking-[0.4em] mb-6 text-gold-300 uppercase">Kaku Koumuten</p>
+          <p className="text-xs tracking-[0.4em] mb-6 text-gold-300 uppercase">study system</p>
           <h1 className="font-serif text-4xl md:text-6xl tracking-wide leading-snug mb-6">
-            暮らしに、根を張る。
+            大分舞鶴掲示板
           </h1>
           <p className="text-sm md:text-base text-earth-200 tracking-wide max-w-md mx-auto mb-10 leading-loose">
-            大分県で30年。地域の風土を知り尽くした職人が、<br className="hidden md:block" />
-            お客様とともに、長く愛される家をつくります。
+            舞高生の、舞高生による、舞高生のための<br className="hidden md:block" />
+            掲示板です
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/contact" variant="primary">お問い合わせ</Button>
-            <Button href="/works" variant="secondary" className="border-earth-200 text-earth-100 hover:border-earth-50 hover:text-earth-50 bg-transparent hover:bg-white/10">施工事例を見る</Button>
+            <Button href="/works" variant="secondary" className="border-earth-200 text-earth-100 hover:border-earth-50 hover:text-earth-50 bg-transparent hover:bg-white/10">会話を始める</Button>
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
@@ -88,7 +88,7 @@ export default function TopPage() {
 
       {/* 強み */}
       <section className="py-24 px-6 max-w-6xl mx-auto">
-        <SectionTitle en="Our Strengths" ja="私たちの強み" center />
+        <SectionTitle en="About Systems" ja="システムについて" center />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {strengths.map((s) => (
             <div key={s.title} className="bg-white border border-earth-100 p-8">
